@@ -31,19 +31,32 @@
 >  #### Command 1
 >  docker exec ossp-container cat /etc/os-release
 >  #### Output 1
->   PRETTY_NAME="Ubuntu 24.04.1 LTS"
-NAME="Ubuntu"
-VERSION_ID="24.04"
-VERSION="24.04.1 LTS (Noble Numbat)"
-VERSION_CODENAME=noble
-ID=ubuntu
-ID_LIKE=debian
-HOME_URL="https://www.ubuntu.com/"
-SUPPORT_URL="https://help.ubuntu.com/"
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-UBUNTU_CODENAME=noble
-LOGO=ubuntu-logo
-> ### Command 2
-> 
+>   PRETTY_NAME="Ubuntu 24.04.1 LTS"\
+NAME="Ubuntu"\
+VERSION_ID="24.04"\
+VERSION="24.04.1 LTS (Noble Numbat)"\
+VERSION_CODENAME=noble\
+ID=ubuntu\
+ID_LIKE=debian\
+HOME_URL="https://www.ubuntu.com/"\
+SUPPORT_URL="https://help.ubuntu.com/"\
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"\
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"\
+UBUNTU_CODENAME=noble\
+LOGO=ubuntu-logo\
+
+> #### Command 2
+> docker exec ossp-container git --version
+> #### Output 2
+> git version 2.43.0
+
+> #### Command 3
+> docker exec ossp-container python3 --version
+> #### Output 3
+> Python 3.12.3
+
+> #### Command 4
+> docker inspect --format="{{.HostConfig.Binds }}" ossp-container
+> #### Output 4
+> [/Users/hyj/ossp_host_dir:/mnt/osp_container_dir]
   
