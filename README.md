@@ -25,8 +25,8 @@
 ```
 > ### Description
 > > A happy number is defined as a number that reaches 1 when replaced by the sum of the squares of its digits repeatedly. If this process return 1, the number is happy and if the process is in infinite loop, the number is unhappy.
-
-
+\
+\
 ## Week 5 Assignment
 >  #### Command 1
 >  docker exec ossp-container cat /etc/os-release
@@ -46,18 +46,18 @@ UBUNTU_CODENAME=noble\
 LOGO=ubuntu-logo\
 
 > #### Command 2
-> <code> docker exec ossp-container git --version <code>
+> <code> docker exec ossp-container git --version </code>
   
 > #### Output 2
 > git version 2.43.0
-
+\
 > #### Command 3
-> docker exec ossp-container python3 --version
+> <code> docker exec ossp-container python3 --version </code>
 > #### Output 3
 > Python 3.12.3
-
+\
 > #### Command 4
-> docker inspect --format="{{.HostConfig.Binds }}" ossp-container
+> <code> docker inspect --format="{{.HostConfig.Binds }}" ossp-container </code>
 > #### Output 4
 > [/Users/hyj/ossp_host_dir:/mnt/osp_container_dir]
   
