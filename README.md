@@ -51,11 +51,13 @@ LOGO=ubuntu-logo\
 > #### Output 2
 > git version 2.43.0
 \
+
 > #### Command 3
 > <code> docker exec ossp-container python3 --version </code>
 > #### Output 3
 > Python 3.12.3
-\
+
+
 > #### Command 4
 > <code> docker inspect --format="{{.HostConfig.Binds }}" ossp-container </code>
 > #### Output 4
