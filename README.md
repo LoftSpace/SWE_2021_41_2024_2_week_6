@@ -52,21 +52,21 @@ This command displays the contents of the /etc/os-release file inside the Docker
 > #### Command 2
 > <code> docker exec ossp-container git --version </code>
 > #### Output 2
-> git version 2.43.0
+> <code> git version 2.43.0 </code>
 
 This command checks the version of Git installed inside the ossp-container
 
 > #### Command 3
 > <code> docker exec ossp-container python3 --version </code>
 > #### Output 3
-> Python 3.12.3
+> <code> Python 3.12.3 </code>
 
 This command checks the version of Python 3 installed inside the ossp-container
 
 > #### Command 4
 > <code> docker inspect --format="{{.HostConfig.Binds }}" ossp-container </code>
 > #### Output 4
-> [/Users/hyj/ossp_host_dir:/mnt/osp_container_dir]
+> <code> [/Users/hyj/ossp_host_dir:/mnt/osp_container_dir] </code>
 
 This command shows the ossp-container and the bindings(mounting) between the host machine and the container
   
