@@ -3,7 +3,8 @@
 ##Week 4 Assignment
 > Repository
 > > https://github.com/LoftSpace/SWE_2021_41_2024_2_week4.git
----python
+
+<code>
   def isHappy(n: int) -> bool:
     def get_next(number):
         total_sum = 0
@@ -19,7 +20,11 @@
         n = get_next(n)
 
     return n == 1
-isHappy(2)
+
+</code>
+
+---python
+  
     
 ---
 > ###Description
