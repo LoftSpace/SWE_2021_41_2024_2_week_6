@@ -31,7 +31,7 @@
 >  #### Command 1
 >  <code> docker exec ossp-container cat /etc/os-release </code> 
 >  #### Output 1
->   ```bash
+```bash
 PRETTY_NAME="Ubuntu 24.04.1 LTS"\
 NAME="Ubuntu"\
 VERSION_ID="24.04"\
