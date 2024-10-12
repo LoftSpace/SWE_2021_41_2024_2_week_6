@@ -1,10 +1,10 @@
 # SWE_2021_41_2024_2_week_6
 
 ##Week 4 Assignment
-> ###Repository
+> Repository
 > > https://github.com/LoftSpace/SWE_2021_41_2024_2_week4.git
-<code>
-   def isHappy(n: int) -> bool:
+---python
+  def isHappy(n: int) -> bool:
     def get_next(number):
         total_sum = 0
         while number > 0:
@@ -20,7 +20,8 @@
 
     return n == 1
 isHappy(2)
-</code>
+    
+---
 > ###Description
 > > A happy number is defined as a number that reaches 1 when replaced by the sum of the squares of its digits repeatedly. If this process return 1, the number is happy and if the process is in infinite loop, the number is unhappy.
 
