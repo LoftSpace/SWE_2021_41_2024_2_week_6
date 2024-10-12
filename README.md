@@ -31,7 +31,8 @@
 >  #### Command 1
 >  <code> docker exec ossp-container cat /etc/os-release </code> 
 >  #### Output 1
->   <code> PRETTY_NAME="Ubuntu 24.04.1 LTS"\
+>   ```bash
+PRETTY_NAME="Ubuntu 24.04.1 LTS"\
 NAME="Ubuntu"\
 VERSION_ID="24.04"\
 VERSION="24.04.1 LTS (Noble Numbat)"\
@@ -43,7 +44,8 @@ SUPPORT_URL="https://help.ubuntu.com/"\
 BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"\
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"\
 UBUNTU_CODENAME=noble\
-LOGO=ubuntu-logo\ </code>
+LOGO=ubuntu-logo\ 
+```
 
 This command displays the contents of the /etc/os-release file inside the Docker container named ossp-container. This file contains information about the operating system, in this case, showing that the container is running Ubuntu 24.04.1 LTS along with other OS details.
 
