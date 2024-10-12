@@ -47,21 +47,20 @@ UBUNTU_CODENAME=noble\
 LOGO=ubuntu-logo\ 
 ```
 
-This command displays the contents of the /etc/os-release file inside the Docker container named ossp-container. This file contains information about the operating system, in this case, showing that the container is running Ubuntu 24.04.1 LTS along with other OS details.
-
+This command shows the contents of the /etc/os-release file inside the Docker container named ossp-container. 
 > #### Command 2
 > <code> docker exec ossp-container git --version </code>
 > #### Output 2
 > <code> git version 2.43.0 </code>
 
-This command checks the version of Git installed inside the ossp-container
+This command shows the version of Git installed in the ossp-container
 
 > #### Command 3
 > <code> docker exec ossp-container python3 --version </code>
 > #### Output 3
 > <code> Python 3.12.3 </code>
 
-This command checks the version of Python 3 installed inside the ossp-container
+This command shows the version of Python 3 installed in the ossp-container
 
 > #### Command 4
 > <code> docker inspect --format="{{.HostConfig.Binds }}" ossp-container </code>
