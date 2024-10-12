@@ -26,7 +26,7 @@
 > ### Description
 > > A happy number is defined as a number that reaches 1 when replaced by the sum of the squares of its digits repeatedly. If this process return 1, the number is happy and if the process is in infinite loop, the number is unhappy.
 
-\
+
 ## Week 5 Assignment
 >  #### Command 1
 >  <code> docker exec ossp-container cat /etc/os-release </code> 
