@@ -46,7 +46,8 @@ UBUNTU_CODENAME=noble\
 LOGO=ubuntu-logo\
 
 > #### Command 2
-> docker exec ossp-container git --version
+> <code> docker exec ossp-container git --version <code>
+  
 > #### Output 2
 > git version 2.43.0
 
