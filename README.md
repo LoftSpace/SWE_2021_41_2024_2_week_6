@@ -29,9 +29,9 @@
 \
 ## Week 5 Assignment
 >  #### Command 1
->  docker exec ossp-container cat /etc/os-release
+>  <code> docker exec ossp-container cat /etc/os-release </code> 
 >  #### Output 1
->   PRETTY_NAME="Ubuntu 24.04.1 LTS"\
+>   <code> PRETTY_NAME="Ubuntu 24.04.1 LTS"\
 NAME="Ubuntu"\
 VERSION_ID="24.04"\
 VERSION="24.04.1 LTS (Noble Numbat)"\
@@ -43,23 +43,28 @@ SUPPORT_URL="https://help.ubuntu.com/"\
 BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"\
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"\
 UBUNTU_CODENAME=noble\
-LOGO=ubuntu-logo\
+LOGO=ubuntu-logo\ </code>
+
+This command displays the contents of the /etc/os-release file inside the Docker container named ossp-container. This file contains information about the operating system, in this case, showing that the container is running Ubuntu 24.04.1 LTS along with other OS details.
 
 > #### Command 2
 > <code> docker exec ossp-container git --version </code>
-  
 > #### Output 2
 > git version 2.43.0
-\
+
+This command checks the version of Git installed inside the ossp-container
 
 > #### Command 3
 > <code> docker exec ossp-container python3 --version </code>
 > #### Output 3
 > Python 3.12.3
 
+This command checks the version of Python 3 installed inside the ossp-container
 
 > #### Command 4
 > <code> docker inspect --format="{{.HostConfig.Binds }}" ossp-container </code>
 > #### Output 4
 > [/Users/hyj/ossp_host_dir:/mnt/osp_container_dir]
+
+This command shows the ossp-container and the bindings(mounting) between the host machine and the container
   
